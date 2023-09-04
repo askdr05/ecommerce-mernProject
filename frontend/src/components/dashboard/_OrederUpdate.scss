@@ -1,0 +1,86 @@
+.orderUpdateContainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    // align-items: center;
+    
+}
+
+.orderUpdatePage{
+    // width:50% ;
+    height: 100%;
+    overflow-y: scroll;
+    
+    
+}
+.progressContainer{
+    border-left: 1px solid rgb(124, 120, 120);
+    height: 100%;
+    // margin: auto;
+}
+.updateOrderForm {
+    margin: 5vmax 0;
+    padding: 3vmax 2.5vmax;
+    background-color: white;
+   
+  }
+  
+  .updateOrderForm > div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+  .updateOrderForm > div > select {
+    padding: 1vmax 4vmax;
+    margin: 2rem 0;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 0.9vmax cursive;
+    outline: none;
+  }
+  
+  .updateOrderForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgba(0, 0, 0, 0.623);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .orderUpdateContainer{
+        display: flex;
+        flex-direction: column;
+
+        .orderUpdatePage{
+            width: 100%;
+        }
+        .progressContainer{
+              width: 100%;
+              height: 30dvh;
+              box-shadow: 0 0 5px  rgba(15, 15, 15, 0.26);
+              .updateOrderForm {
+                background-color: rgb(215, 213, 213);
+                padding: 3vmax;
+                margin: 0;
+                .updateOrderForm > div > select {
+                  padding: 2.5vmax 5vmax;
+                  font: 300 1.7vmax cursive;
+                  option{
+                    width: 100dvw;
+                  }
+                }
+                .updateOrderForm > div > svg {
+                  font-size: 2.8vmax;
+                }
+              }
+        }
+
+        
+        
+    }
+    
+  }

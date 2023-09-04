@@ -1,0 +1,185 @@
+@import "../../base";
+
+// @mixin theme {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+// .Footer {
+//     display: flex;
+//     align-items: center;
+//     background-color: rgb(34, 33, 33);
+//     color: $text-color-secondary;
+
+
+//     width: 100%;
+//     height: 40dvh;
+
+    
+
+
+
+
+//     &_left {
+//         @include theme;
+//         h4 {
+//             font-size: 3vmax;
+//         }
+
+//         div {
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+
+//             img {
+//                 margin-top: 10px;
+//                 height: 50px;
+//                 object-fit: contain;
+//             }
+//         }
+
+
+
+//     }
+
+//     &_middle {
+//         @include theme;
+//         flex: 2;
+//         h1 {
+//             font-size: 4vmax;
+           
+//         }
+//     }
+
+//     &_right {
+//         @include theme;
+//         flex: 1;
+//         div {
+//             display: flex;
+//             justify-content: center;
+
+//             img {
+//                 padding: 10px 10px ;
+//                 width: 15%;
+//                 object-fit: contain;
+//                 // display: block;
+//                 // mix-blend-mode: color-burn;
+//                 // border-radius: 100%
+
+//             }
+//         }
+
+//     }
+
+
+
+
+
+// }
+
+// @media(max-width:600px){
+//     .Footer{
+        
+//         font-size: 0.1vmx;
+//         &_left {
+           
+//             h4 {
+//                 font-size: 2vmax;
+//             }
+            
+    
+//                 img {
+//                     margin-top: 5px;
+//                     height: 10px;
+//                     object-fit: contain;
+//                 }
+//             } 
+
+//             &_middle {
+                
+//                 h1 {
+//                     font-size: 2vmax;
+                   
+//                 }
+//             }
+//             &_right{
+//                 font-size: 0.6vmax;
+//             }
+//     }
+// }
+
+footer {
+    // margin-top: 10vmax;
+    padding: 2vmax;
+    background-color: rgb(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .leftFooter {
+    width: 20%;
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftFooter > h4 {
+    font-family: "Roboto";
+    font-size: 1vmax;
+  }
+  .leftFooter > p {
+    text-align: center;
+    font-size: 1.2vmax;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .leftFooter > img {
+    width: 10vmax;
+    margin: 1vmax;
+    cursor: pointer;
+  }
+  
+  .midFooter {
+    width: 60%;
+  
+    text-align: center;
+  }
+  
+  .midFooter > h1 {
+    font-size: 4vmax;
+    font-family: "Roboto";
+    color: #eb4034;
+  }
+  .midFooter > p {
+    max-width: 60%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 1vmax auto;
+  }
+  
+  .rightFooter {
+    width: 20%;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightFooter > h4 {
+    font-family: "Roboto";
+    font-size: 1.4vmax;
+    text-decoration: underline;
+  }
+  .rightFooter > a {
+    text-decoration: none;
+    font-size: 1.3vmax;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: white;
+    transition: all 0.5s;
+    margin: 0.5vmax;
+  }
+  
+  .rightFooter > a:hover {
+    color: #eb4034;
+  }

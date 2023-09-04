@@ -1,0 +1,37 @@
+@import "../../base";
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 14max;
+    text-decoration: none;
+    color: black;
+
+    margin: auto;
+    padding: 0.3rem;
+    cursor: pointer;
+
+    &_ratings_reviews {
+        display: flex;
+        align-items: center;
+
+        justify-content: flex-start ;
+    }
+
+    p{
+        font-size: 1.2vmax;
+        margin: 1vmax 0.5vmax;
+        margin-bottom: 0;
+    }
+
+    &_price{
+        margin: 0.5vmax;
+        color: tomato;
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+       color: aqua;
+    }
+
+}

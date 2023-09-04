@@ -1,0 +1,282 @@
+// @import "../../base";
+
+.DashboardSidebar {
+    width: 20dvw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // // margin: 2vmax;
+    list-style: none;
+    padding-top: 2vmax;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    background-color: white;
+    transition: all 0.3s linear;
+
+    img {
+        width: 100px;
+        height: 50px;
+        object-fit: contain;
+        display: block;
+        background-blend-mode: lighten;
+        // mix-blend-mode:color-burn;
+    }
+
+    span {
+        margin: 0.5vmax;
+        padding: 0.2vmax;
+        // color: black;
+    }
+
+
+
+    .DashboardSidebarContainer {
+        padding: 0;
+        width: 100%;
+        // background-color: solid white;
+
+        a {
+
+            text-decoration: none;
+        }
+
+        p {
+            position: relative;
+            color: black;
+            width: 100%;
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            // flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            // text-align: center;
+            font-weight: bold;
+            font-family: "roboto";
+            padding: 0.4rem 1.8rem;
+            margin: 0.2vmax 0;
+            cursor: pointer;
+
+            &:hover {
+
+                box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+                color: orangered;
+
+            }
+        }
+
+        div {
+            padding: 0.4rem 1.8rem;
+            margin: 0.2vmax 0;
+            font-weight: bold;
+            font-family: "roboto";
+
+            .dropdownMenu {
+                width: 100%;
+                height: 200%;
+                padding: 0;
+                display: none;
+                padding: 0;
+
+                hr {
+                    color: black;
+                }
+
+                p {
+                    width: 100%;
+                    color: black;
+                    margin: 1vmax;
+                    padding: 0.5vmax;
+                    text-align: center;
+                    border-radius: 2px;
+
+                    &:hover {
+
+                        box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+                        color: orangered;
+                    }
+
+                    //    background-color: white;
+                }
+
+
+
+            }
+
+            &:hover {
+                .dropdownMenu {
+
+                    display: block;
+                    // opacity: 1;
+                    // visibility: visible;
+                    // transform: translateX(22%);
+                    // transition: all 0.5s ease-in-out;
+                    // box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+                    // background-color: white;
+
+                }
+            }
+        }
+
+
+    }
+
+    // &_dropdown {
+    //     position: relative;
+    //     margin: 1vmax;
+    //     padding: 0.2vmax;
+
+
+
+    //     &:hover &_
+    // }
+
+    // &
+}
+
+.DashboardSidebar_show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    // visibility: visible;
+    // transform: translateX();
+    z-index: 2;
+    width: 45dvw;
+    height: 100%;
+    padding-top: 2rem;
+    box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+    background-color: white;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+
+    // list-style: none;
+    img {
+        width: 100px;
+        height: 50px;
+        object-fit: contain;
+        display: block;
+        background-blend-mode: lighten;
+        // mix-blend-mode:color-burn;
+    }
+
+    span {
+        margin: 0.5vmax;
+        padding: 0.2vmax;
+        // color: black;
+    }
+
+
+
+    .DashboardSidebarContainer {
+        padding: 0;
+        width: 100%;
+        // background-color: solid white;
+
+        a {
+
+            text-decoration: none;
+        }
+
+        p {
+            position: relative;
+            color: black;
+            width: 100%;
+            text-decoration: none;
+            list-style: none;
+            display: flex;
+            // flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            // text-align: center;
+            font-weight: bold;
+            font-family: "roboto";
+            padding: 0.4rem 1.8rem;
+            margin: 0.2vmax 0;
+            cursor: pointer;
+
+            &:hover {
+
+                box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+                color: orangered;
+
+            }
+        }
+
+        div {
+            padding: 0.4rem 1.8rem;
+            margin: 0.2vmax 0;
+            font-weight: bold;
+            font-family: "roboto";
+            cursor: pointer;
+
+            .dropdownMenu {
+                display: none;
+                width: 100%;
+                height: 17dvh;
+                padding: 0;
+                border-radius: 5px;
+                background-color: white;
+                margin: auto;
+                padding: 0;
+
+                hr {
+                    color: black;
+                }
+
+                p {
+                    color: black;
+                    margin: 1vmax;
+                    padding: 0.5vmax;
+                    //    text-align: center;
+
+                    &:hover {
+
+                        box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+                        color: orangered;
+                    }
+
+                    //    background-color: white;
+                }
+
+
+
+            }
+
+            &:hover {
+
+                box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+                color: orangered;
+                
+
+                .dropdownMenu {
+
+
+                    display: block;
+
+                }
+            }
+
+
+
+        }
+
+
+    }
+
+
+
+}
+
+@media(max-width:600px) {
+    .DashboardSidebar {
+        position: absolute;
+        left: 0;
+        transform: translateX(-200%);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease-in;
+
+
+    }
+}

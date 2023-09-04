@@ -1,0 +1,18 @@
+@import "../../base";
+
+.app{
+    width: 100dvw;
+    &_elements{
+        display: flex;
+        height: 90dvh;
+        width: 100%;   
+        // overflow: scroll;  
+    }
+}
+
+// @media(max-width:600px){
+//     .app_elements{
+//         width: 100%;
+//         // position: fixed;
+//     }
+// }

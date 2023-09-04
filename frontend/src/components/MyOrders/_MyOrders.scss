@@ -1,0 +1,15 @@
+.griid_container{
+    width: 90%;
+    height: 50%;
+    margin: 2vmax 3vmax;
+}
+
+.ag-theme-alpine {
+    /* disable all borders */
+    --ag-borders: none;
+    /* then add back a border between rows */
+    // border-style: 
+    --ag-row-border-style:solid;
+    --ag-row-border-width: 5px;
+    --ag-row-border-color: rgb(150, 150, 200);
+  }
